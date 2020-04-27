@@ -1,0 +1,36 @@
+.home-page {
+  display: flex;
+  margin: 100px 80px;
+  flex-direction: column;
+  .title {
+    margin: auto;
+  }
+  .category-main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    .category-name {
+      text-align: center;
+    }
+    .category-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      .category-block {
+        display: flex;
+        flex-direction: column;
+        margin: 10px 10px 60px 10px;
+        img {
+          width: 100%;
+          max-width: 350px;
+          min-width: 100px;
+          max-height: 200px;
+          height: 100%;
+        }
+        .category-description {
+          margin: auto;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

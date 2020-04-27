@@ -1,0 +1,13 @@
+.login-main {
+  height: 100%;
+  width: 300px;
+  margin: 150px auto auto auto;
+  display: flex;
+  flex-direction: column;
+  h3 {
+    margin: auto auto 20px auto;
+  }
+  .item {
+    margin-bottom: 20px;
+  }
+}

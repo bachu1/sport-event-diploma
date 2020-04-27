@@ -1,0 +1,15 @@
+.application-form-main {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 400px;
+  .app-form-item {
+    margin-bottom: 20px;
+  }
+  .app-form-description {
+    .text-area-autosize {
+      min-height: 100px;
+      min-width: 246px;
+    }
+  }
+}

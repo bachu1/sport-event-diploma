@@ -1,0 +1,43 @@
+.create-scene {
+  margin: 100px auto;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  h3 {
+    margin: 20px auto;
+  }
+  .item {
+    margin-bottom: 20px;
+  }
+  .type-picker {
+    font-size: 18px;
+    font-weight: bold;
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: white;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 10;
+    }
+    .dropdown:hover .dropdown-content {
+      display: flex;
+      flex-direction: column;
+      * {
+        margin-bottom: 5px;
+        padding: 0 10px;
+        cursor: pointer;
+      }
+    }
+  }
+  .date-picker {
+    span {
+    }
+    display: flex;
+    flex-direction: column;
+  }
+}

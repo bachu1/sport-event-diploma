@@ -1,0 +1,42 @@
+.header-main {
+  display: flex;
+  background-color: #222b45;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+  color: white;
+  .header-block {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px 50px;
+    .header-item {
+      margin: auto;
+      text-transform: uppercase;
+      cursor: pointer;
+      .logo {
+        width: 50px;
+      }
+      .application-submit-button {
+        background-color: #222b45; /* Green */
+        padding: 10px 15px;
+        border: 1px solid white;
+        border-radius: 1px;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+a {
+  color: #FFF;
+  text-decoration: none;
+}
+a:hover {
+  color: #00F
+}

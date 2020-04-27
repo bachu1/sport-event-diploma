@@ -1,0 +1,5 @@
+{
+  "port": 5000,
+  "jwtSecret": "sport-event-system",
+  "mongoUri": "mongodb+srv://root:root@cluster0-jin4l.azure.mongodb.net/app?retryWrites=true&w=majority"
+}
