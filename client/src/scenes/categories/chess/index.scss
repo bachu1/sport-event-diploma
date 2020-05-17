@@ -1,0 +1,35 @@
+.list-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  .event-elem {
+    margin: 50px;
+    .router {
+      display: flex;
+      text-decoration: none;
+      color: black;
+      flex-direction: column;
+      border: 1px solid white;
+      padding: 15px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      cursor: pointer;
+      &:hover {
+        opacity: 0.7;
+      }
+      img {
+        max-width: 250px;
+        height: 200px;
+      }
+      .category-description {
+        margin: 15px auto 0;
+        font-weight: 600;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 250px;
+      }
+    }
+  }
+}

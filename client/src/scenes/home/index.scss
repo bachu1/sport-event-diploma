@@ -5,30 +5,37 @@
   .title {
     margin: auto;
   }
-  .category-main {
+  .list-wrapper {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     width: 100%;
-    .category-name {
-      text-align: center;
-    }
-    .category-wrapper {
-      display: flex;
-      flex-wrap: wrap;
-      .category-block {
+    .event-elem {
+      margin: 50px;
+      .router {
         display: flex;
+        text-decoration: none;
+        color: black;
         flex-direction: column;
-        margin: 10px 10px 60px 10px;
+        border: 1px solid white;
+        padding: 15px;
+        border-radius: 15px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+        &:hover {
+          opacity: 0.7;
+        }
         img {
-          width: 100%;
-          max-width: 350px;
-          min-width: 100px;
-          max-height: 200px;
-          height: 100%;
+          max-width: 250px;
+          height: 200px;
         }
         .category-description {
-          margin: auto;
-          text-align: center;
+          margin: 15px auto 0;
+          font-weight: 600;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          max-width: 250px;
         }
       }
     }

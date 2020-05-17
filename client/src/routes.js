@@ -10,6 +10,8 @@ import {LoginScene} from "./scenes/login";
 import React from "react";
 import {Redirect} from "react-router-dom";
 import {CreateScene} from "./scenes/create";
+import {PostScene} from "./scenes/post";
+import {EditScene} from "./scenes/edit";
 
 export const ROUTES = [
   {
@@ -27,6 +29,17 @@ export const ROUTES = [
     check: (isLogged) => isLogged,
     path: '/create',
     component: CreateScene,
+    exact: true
+  },
+  {
+    check: (isLogged) => isLogged,
+    path: '/edit/:id',
+    component: EditScene,
+    exact: true
+  },
+  {
+    path: '/post/:id',
+    component: PostScene,
     exact: true
   },
   {

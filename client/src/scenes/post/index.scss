@@ -1,0 +1,49 @@
+.post-main {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  .title {
+    margin: 25px auto;
+    font-size: 26px;
+    font-weight: 600;
+  }
+  .about-block {
+    display: flex;
+    margin: auto;
+    width: 80%;
+    img {
+      height: 300px;
+      width: 350px;
+    }
+    .right-side {
+      width: 60%;
+      margin-left: 25px;
+      display: flex;
+      flex-direction: column;
+      .date {
+        margin: 0 auto 25px;
+        font-weight: 600;
+      }
+      .description {
+        word-wrap: break-word;
+      }
+    }
+    .actions {
+      display: flex;
+      margin-bottom: auto;
+      button {
+        border: none;
+        cursor: pointer;
+        background-color: gray;
+        border-radius: 5px;
+        color: white;
+        padding: 10px;
+      }
+      .delete {
+        margin: auto 15px auto;
+      }
+    }
+  }
+}
