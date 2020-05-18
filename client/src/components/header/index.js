@@ -8,6 +8,9 @@ import {AuthContext} from "../../context/auth.context";
 
 export const HeaderComponent = () => {
   const auth = useContext(AuthContext);
+  const onLogout = () => {
+    auth.logout()
+  };
   return (
     <div className='header-main'>
       <div className='header-block'>
@@ -32,6 +35,7 @@ export const HeaderComponent = () => {
           <Link to={'/create'}>
             <button className='application-submit-button'>Create Post</button>
           </Link>
+          <button onClick={onLogout} className='application-submit-button btn'>Logout</button>
         </span>
         }
         {!auth.isAuth &&

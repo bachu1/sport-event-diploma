@@ -33,7 +33,7 @@ export const Chess = props => {
               <div key={item._id} className='event-elem'>
                 <Link to={`/post/${item._id}`} className='router'>
                   <img src={`http://localhost:5000/` + item.imageUrl} alt=""/>
-                  <span className='category-description'>{item.description}</span>
+                  <span className='category-description'>{item.title}</span>
                 </Link>
               </div>
             ))
