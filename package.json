@@ -16,9 +16,9 @@
   "dependencies": {
     "@material-ui/core": "^4.9.11",
     "bcryptjs": "^2.4.3",
-    "body-parser": "^1.19.0",
+    "body-parser": "^1.20.1",
     "config": "^3.3.1",
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "express-formidable": "^1.2.0",
     "express-validator": "^6.4.0",
     "filereader": "^0.10.3",
